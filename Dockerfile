@@ -13,7 +13,7 @@ RUN echo "deb https://apt.boundlessgeo.com/suite/latest/ubuntu/ trusty main" > /
 RUN apt-get update
 
 #Install Complete OpenGeo
-RUN apt-get install opengeo
+RUN apt-get install -y opengeo
 
 #TODO
 #Update the Port of tomcat to 80
