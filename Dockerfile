@@ -1,7 +1,8 @@
 FROM ubuntu:14.04
 
-#Need to install wget
-RUN apt-get update && apt-get install -y wget
+#Need to install wget & apt-transport-https for https
+RUN apt-get update && apt-get install -y wget \
+		apt-transport-https
 
 #Import the PGP Key
 RUN wget -qO- https://apt.boundlessgeo.com/gpg.key | apt-key add -
